@@ -1,2 +1,19 @@
-# learn-python
-My first Python learning repository
+# 商家版外卖点餐软件（初稿）
+
+本仓库提供商家端外卖点餐软件的初稿原型，包括：
+- 简化的数据模型（菜单、订单、状态流转）
+- 轻量级内存存储与领域服务
+- 一个脚本式命令行演示，展示从接单到出餐的基本闭环
+
+## 快速体验
+```bash
+python -m merchant_app.cli
+```
+
+脚本会：
+1) 生成示例菜单并展示可售品。
+2) 模拟外卖渠道下单，打印订单明细与合计。
+3) 将订单状态推进到完成。
+4) 演示售罄处理并列出所有订单。
+
+更多产品背景与里程碑拆解见 [docs/initial_draft.md](docs/initial_draft.md)。
